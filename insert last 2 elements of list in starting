@@ -1,0 +1,5 @@
+l=[int(i) for i in input("enter list of elements").split()]
+k=int(input("enter k value:"))
+for i in range(k):
+    l.insert(0,l.pop())
+print(l)
