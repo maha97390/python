@@ -1,0 +1,15 @@
+s=input("Enter input")
+s1=''
+i=0
+while(i<len(s)):
+    if(i==0) or (i==len(s)-1):
+        s1+=s[i].upper()
+    elif(s[i].isspace()):
+        s1=s1[:len(s1)-1]
+        s1+=s[i-1].upper()
+        s1+1=s[i]
+        s1+1=s[i+1].upper()
+        i+=1
+    else:
+        s1+=s[i]
+        i+=1
