@@ -1,0 +1,8 @@
+l=list(map(int,input().split()))
+k=int(input("Enter number digits to splits"))
+l1=[]
+i=0
+while(i<len(l)):
+    l1.append(l[i:i+k])
+    i+=k
+print(l1)
