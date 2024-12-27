@@ -1,0 +1,8 @@
+s=input("enter string ")
+rb=s.count('(') - s.count(')')
+sb=s.count('[') - s.count(']')
+fb=s.count('{') - s.count('}')
+if rb or sb or fb :
+    print("unbalanced")
+else :
+    print("balanced")
