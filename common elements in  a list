@@ -1,0 +1,17 @@
+l1=list(map(int,input().split()))
+l2=list(map(int,input().split()))
+l3=list(map(int,input().split()))
+l4=[]
+for i in l1:
+    for j in l1:
+        if(i==j):
+            l4.append(i)
+for i in l4:
+    sw=0
+    for j in l3:
+        if(i==j):
+            sw=1
+            break
+    if(sw==0):
+        l4.remove(i)
+print(l4)
